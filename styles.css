@@ -205,18 +205,39 @@ nav{
   min-height: 12rem;
   margin: 0;
   padding: 0;
-}
-
-
-
-
-
-.contenedor-texto .columna2{
-    color: var(--fondo);
-    -webkit-text-stroke-width: 4px;
-    -webkit-text-stroke-color: var(--titulos);
   
 }
+
+
+.contenedor-texto .columna2 {
+  color: var(--fondo);
+  -webkit-text-stroke-width: 4px;
+  -webkit-text-stroke-color: var(--titulos);
+  animation: brilloTexto 2s ease-in-out infinite;
+}
+
+/* Animación de brillo */
+@keyframes brilloTexto {
+  0%, 100% {
+    text-shadow:
+      0 0 2.5px var(--titulos),
+      0 0 5px var(--titulos),
+      0 0 10px var(--titulos),
+      0 0 15px var(--color-secundario);
+  }
+  50% {
+    text-shadow:
+      0 0 10px var(--color-secundario),
+      0 0 15px var(--color-secundario),
+      0 0 20px var(--color-secundario),
+      0 0 25px var(--titulos);
+  }
+}
+
+
+
+
+
 
 .contenedor-texto .right-side{
     display: flex;
@@ -381,7 +402,7 @@ nav{
   .figma      { top: 32%; left: 50%; background-image: url('img/figma.png'); }
   .bootstrap  { top: 60%; left: 25%; background-image: url('img/bootstrap.png'); }
   .canva      { top: 62%; left: 40%; background-image: url('img/canva.webp'); }
-  .aos        { top: 65%; left: 55%; background-image: url('img/aos.webp'); }
+  .aos        { top: 65%; left: 55%; background-image: url('img/aos.png'); }
   .vs         { top: 58%; left: 70%; background-image: url('img/vs.png'); }
   .mariadb    { top: 45%; left: 75%; background-image: url('img/mariadb.png'); }
   
